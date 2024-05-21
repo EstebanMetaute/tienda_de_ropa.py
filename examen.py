@@ -3,7 +3,7 @@ import os
 products = {}
 
 while True:
-    os.system('cls' if os.name == 'nt' else 'clear')
+    os.system('cls')
     print('welcome to clothing stores MATYW')
     print("\nMenú:")
     print("1. get into")
@@ -13,7 +13,7 @@ while True:
     option = int(input("choose option-> "))
     if option == 1:
  
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system('cls')
         product_name = input("enter product name-> ")
         product_price = float(input("producte price-> "))
         product_quantity = int(input("amount-> "))
@@ -22,13 +22,12 @@ while True:
     elif option == 2:
         print(products)
        
-        os.system('cls' if os.name == 'nt' else 'clear')
+        os.system('cls')
    
     elif option == 3:
         break
     else:
-        os.system('cls' if os.name == 'nt' else 'clear')
-
-        print("Opción inválida. Por favor, elija una opción del menú.")
+        os.system('cls')
+        print("invalid option")
 
 print("thanks for using clothing stores MATYW.")
