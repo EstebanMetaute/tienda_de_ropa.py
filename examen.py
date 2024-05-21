@@ -7,7 +7,7 @@ while True:
     print('welcome to clothing stores MATYW')
     print("\nMenú:")
     print("1. get into")
-    print("2. see products")
+  
     print("3. exit")
 
     option = int(input("choose option-> "))
@@ -19,11 +19,7 @@ while True:
         product_quantity = int(input("amount-> "))
         products[product_name] = {"price": product_price, "quantity": product_quantity}
 
-    elif option == 2:
-        print(products)
-       
-        os.system('cls')
-   
+
     elif option == 3:
         break
     else:
@@ -31,3 +27,5 @@ while True:
         print("invalid option")
 
 print("thanks for using clothing stores MATYW.")
+
+print(products)
